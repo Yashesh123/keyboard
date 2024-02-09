@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="canvas">
+      <textarea id="textArea"></textarea>
+      <div>
+        <select
+          name="Sounds"
+          id="select"
+          autocomplete="off"
+          required
+          onchange="changeSound(event)"
+        >
+          <option value="mechanical-subtle" selected="selected">Mechanical-Subtle</option>
+
+          <option value="mechanical">Mechanical</option>
+          <option value="clear">Clear</option>
+          <option value="loud">Loud</option>
+          <option value="soft">Soft</option>
+        </select>
+      </div>
+      <div class="Keyboard">
+        <!-- <span></span> -->
+        <div class="row first-row">
+          <button id="`">`</button>
+          <button id="1">1</button>
+          <button id="2">2</button>
+          <button id="3">3</button>
+          <button id="4">4</button>
+          <button id="5">5</button>
+          <button id="6">6</button>
+          <button id="7">7</button>
+          <button id="8">8</button>
+          <button id="9">9</button>
+          <button id="0">0</button>
+          <button id="-">-</button>
+          <button id="=">=</button>
+          <button id="Backspace" class="backspace">Backspace</button>
+        </div>
+        <div class="row second-row">
+          <button class="tab">Tab</button>
+          <button id="q">Q</button>
+          <button id="w">W</button>
+          <button id="e">E</button>
+          <button id="r">R</button>
+          <button id="t">T</button>
+          <button id="y">Y</button>
+          <button id="u">U</button>
+          <button id="i">I</button>
+          <button id="o">O</button>
+          <button id="p">P</button>
+          <button id="[">[</button>
+          <button id="]">]</button>
+          <button id="/" class="slash">\</button>
+        </div>
+        <div class="row third-row">
+          <button id="CapsLock" class="caps">CapsLock</button>
+          <button id="a">A</button>
+          <button id="s">S</button>
+          <button id="d">D</button>
+          <button id="f">F</button>
+          <button id="g">G</button>
+          <button id="h">H</button>
+          <button id="j">J</button>
+          <button id="k">K</button>
+          <button id="l">L</button>
+          <button id=";">;</button>
+          <button id="'">'</button>
+          <button id="Enter" class="enter">Enter</button>
+        </div>
+        <div class="row fourth-row">
+          <button id="Shift" class="shift">Shift</button>
+          <button id="z">Z</button>
+          <button id="x">X</button>
+          <button id="c">C</button>
+          <button id="v">V</button>
+          <button id="b">B</button>
+          <button id="n">N</button>
+          <button id="m">M</button>
+          <button id=",">,</button>
+          <button id=".">.</button>
+          <button id="/">/</button>
+          <button id="Shift" class="shift">Shift</button>
+        </div>
+        <div class="row fifth-row">
+          <button id="spacebar" class="spacebar"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

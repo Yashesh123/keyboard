@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #f7fbfc;
+}
+
+.canvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+#textArea {
+  min-width: 800px;
+  min-height: 200px;
+  max-height: 200px;
+  max-width: 1000px;
+  margin-top: 50px;
+  font-size: 30px;
+  color: rgb(165, 165, 165);
+  border-radius: 10px;
+  border-color: rgb(92, 92, 92);
+  caret-color: gray;
+}
+
+.Keyboard {
+  position: relative;
+  width: 1200px;
+  background-color: #c3f9d4;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 5px;
+  min-width: 55px;
+  height: 55px;
+  background-color: #fcdea6;
+  box-shadow: 5px 5px 10px #ffba67, -5px -5px 10px #e1ffeb;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 500;
+  border: none;
+}
+
+button:active {
+  box-shadow: 1px 1px 1px 2px #fff8f8, -1px -1px 2px #ffb04f;
+}
+
+.backspace {
+  width: 120px;
+}
+
+.tab,
+.slash {
+  width: 87px;
+}
+
+.caps,
+.enter {
+  width: 122px;
+}
+
+.spacebar {
+  width: 672px;
+}
+
+.shift {
+  width: 157px;
+}
